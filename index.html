@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet"> 
+
+    <title>Memory game</title>
+</head>
+<body>
+    <div class="main">
+        <h2 class="title">Memory Game</h2>
+        <div class="top">
+            <p class="time">
+                <span hours>0</span> : 
+                <span minutes>0</span> :
+                <span seconds>0</span>
+            </p>
+            <p class="match" match>Match</p>
+        </div>
+
+        <div playground class="playground">
+        </div>
+    </div>
+
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-3"></div>
+
+    <div class="popup" popup>
+        <div class="popup-content">
+            <h3>Completed</h4>
+            <p class="popup-time">Time: <span popup-time></span></p>
+            <button play-again class="popup-btn">Play again</button>
+        </div>
+    </div>
+
+    <script src="./dist/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    position: relative;
+    background-color: rgb(223, 150, 108);;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.main{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.title{text-align: center;}
+
+.top{
+    margin: 2rem 0;
+}
+
+.time,.match{
+    font-size: 1.3rem;
+}
+
+.time{text-align: right; margin-bottom: 20px;}
+.match{text-align: center; opacity: 0; color: #fff;}
+
+.playground{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 0;
+}
+
+.card{
+    font-size: 180%;
+    font-weight: bold;
+    width: 20%;
+    height: 75px;
+    background-color: rgba(8, 8, 8, 0.055);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    user-select: none;
+}
+
+.bubble{
+    position: absolute;
+    display: grid;
+    place-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(8, 8, 8, 0.068);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.bubble-1{
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.bubble-2{
+    top: 20px;
+    right: 40px;
+}
+
+.bubble-3{
+    bottom: 10px;
+    right: 50px;
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.733);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.popup-content{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.popup-time{
+    margin: 2rem;
+}
+
+.popup-btn{
+    color:#fff;
+    padding: .5rem .7rem;
+    background-color: rgb(223, 150, 108);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 950px) {
+    .main{width: 70%;}
+}
+
+@media screen and (max-width:600px) {
+    .main{width: 90%;}
+}
